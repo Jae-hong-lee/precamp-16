@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.background{
+    width: 1024px;
+    height: 600px;
+    padding: 20px 0px 0px 20px;
+    /* 위 오 아 왼: 시계방향 */
+    background-image: url("../images/background.png");
+}
+
+.outerbox{
+    width: 808px;
+    height: 544px;
+    background-image: url("../images/outerbox.png");
+}
+
+.wrapper{
+    padding: 32px 0px 0px 32px;   
+    display: flex;
+    flex-direction: row;
+}
+
+/* 왼쪽영역 */
+.wrapper__left{
+    width: 208px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3px;
+    margin-right: 7px;
+}
+
+/* 왼쪽 - 헤더(투데이카운터) */
+.wrapper__left__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.today{
+    color: #55B2D4;
+    padding-top: 10px;
+    font-size: 9px;
+}
+.zero{
+    color: red;
+    font-size: 11px;
+}
+.count{
+    font-size: 11px;
+}
+
+/* 왼쪽영역 - 바디(프로필) */
+.wrapper__left__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 0px 30px;
+
+    /* 패딩을 잘못준듯?? */
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color:white;
+}
+
+.left__body__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left__body__header__gray{
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+}
+
+.left__body__header__line{
+    border-top: 1px dotted black;
+    margin: 12px 0px;
+}
+
+.left__body__profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* 프로필 디테일 부분 추가 */
+.profile__detail {
+    color: #999999;
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+/* 아이콘부분 색깔 및 크기조정(영역을 일정하게 만들어주자) */
+.fas {
+    color: black;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+}
+/* ---------------------------------------- */
+.left__body__footer{
+    width: 100%;
+    /* height: 30px; */
+    margin-bottom: 30px;
+    /* Error🔥 */
+}
+/* filling 부분 flexbox로 정렬 */
+.wrapper__feel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* feel__title = filltext 픽셀조정  */
+.feel__title{
+    font-size: 11px;
+    color: #999999;
+    margin-bottom: 5px;
+}
+
+
+/* 오른쪽 영역 */
+.wrapper__right{
+    width: 524px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 5px;
+}
+
+.wrapper__right__header{
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 14px;
+    align-items: flex-end;
+}
+
+.wrapper__right__body{
+    width: 510px;
+    height: 445px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.right__header__title, .right__header__setting{
+    color: #55b2e4;
+    font-family: 'Gaegu', cursive;
+}
+
+.right__header__title{
+    font-family: 'Jua', sans-serif;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* navigation */
+.navigation{
+   width: 62px;
+   height: 100px;
+   /* background-color: blueviolet; */
+   position: absolute;
+   top: 110px;
+   left: 784px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+}
+
+.navigation__item{
+    width: 60px;
+    height: 30px;
+    background-color: #298EB5;
+    border: 1px solid black;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 0px 10px 10px 0px;
+    /* 마우스버튼 변경 */
+    cursor: pointer;
+
+}
+
+
+

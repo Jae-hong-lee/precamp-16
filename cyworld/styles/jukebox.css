@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 30px 30px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.wrapper__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+    /* background-color: chocolate; */
+    /* 헤더에서 정렬 x */
+}
+
+.header__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title{
+    color: #55b2d4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.subtitle{
+    /* font-family: 'Sci Fied Bitmap'; */
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 8px;
+    letter-spacing: -0.08em;
+}
+
+.divideLine {
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+/* album__wrapper */
+.bgm__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 12px;
+    /* 가로 정렬 + around 로 공백주면서 정렬 아래는 주석*/
+    align-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #0F465E;
+    text-align: center;
+    /* background-color: darkgray; */
+}
+
+.bgm__album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* background-color: cornsilk; */
+}
+/* 이미지에 클래스 줘서 크기 변경시키기. */
+img{
+    margin-bottom: 10px;
+}
+/* .albumWrapper__item .album-thumbnail {
+    width: 120px;
+    height: 120px;
+} */
+
+/* album__title부분 css 처리 */
+.albumWrapper__item .album-songtitle {
+    font-size: 11px;
+    font-weight: bold;
+    color: #0f465e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* 아티스트 글꼴 정렬, 폰트지정부분. */
+.album__artist{
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    color: #999999; 
+}
+/* .albumWrapper__item .album-artist {
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+.wrapper__body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 헤더처럼 바디에서도 정렬 x */
+    /* background-color: burlywood; */
+}
+/* 래퍼런스 코드에서는 td, th에 css 처리를 해서 width와 text를 정렬시켜서 맞춘듯 싶다. */
+table{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    /* text-align: center; */
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    font-weight: 700;
+    font-size: 10px;
+    color: #999999;
+    background: #EEEEEE;
+}
+
+td{
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+    color: #0F465E;
+    border-bottom: 1px dotted black;
+}
+#album__text{
+    text-align: start;
+}
