@@ -15,3 +15,4 @@
 ---
 ### 회고 작성 참조.
 [https://dongwooklee96.github.io/post/2021/09/17/일일-회고.html](https://dongwooklee96.github.io/post/2021/09/17/%EC%9D%BC%EC%9D%BC-%ED%9A%8C%EA%B3%A0.html)
+* 회고에 좀 더 내가 느낀점 자세히 쓰기.
